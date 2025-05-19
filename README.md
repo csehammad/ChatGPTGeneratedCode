@@ -1,6 +1,12 @@
-# ChatGPTGeneratedCode
+# Machine-to-Machine Identity Provider
 
-This repository contains a prototype Rust Identity Provider (IdP) optimized for machine-to-machine authentication. The project demonstrates a minimal HTTP server that issues JWTs to registered service accounts.
+This repository hosts a Rust-based Identity Provider (IdP) tailored for services and other non-human clients. It exposes a small HTTP API that issues JSON Web Tokens (JWTs) to registered accounts.
+
+The following documents provide more detail:
+
+- [docs/architecture.md](docs/architecture.md) describes the system components and data flow.
+- [docs/roadmap.md](docs/roadmap.md) outlines development milestones.
+- [docs/tasks.md](docs/tasks.md) lists the tasks required for each phase.
 
 ## Building
 
@@ -29,4 +35,3 @@ The server exposes a `POST /token` endpoint that accepts JSON credentials:
 ```
 
 If the credentials match, the server returns a JWT.
-
